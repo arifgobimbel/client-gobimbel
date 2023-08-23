@@ -24,7 +24,7 @@ const MenuHome = [
         path: "#"
     },
     {
-        name: "FAQ & Live Chat",
+        name: "FAQ",
         path: "#"
     },
 ]

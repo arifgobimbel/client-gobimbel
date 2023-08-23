@@ -1,8 +1,8 @@
-import LogoHeader from '../../public/assets/SVGFile/LogoHeader'
 import { TiShoppingCart } from 'react-icons/ti'
 import { BiSolidDiscount } from 'react-icons/bi'
 import { useState } from 'react'
 import { Avatar, Button, Menu, MenuHandler, MenuItem, MenuList } from '@material-tailwind/react'
+import { LogoHeader } from '../../public/assets/svg'
 
 const HeaderNav = () => {
 
@@ -11,7 +11,7 @@ const HeaderNav = () => {
   return (
     <div className='flex justify-between items-center py-4'>
       <span>
-        <LogoHeader/>
+        <LogoHeader className="h-12 w-32"/>
       </span>
       <div className='flex items-center gap-12'>
         <span>
