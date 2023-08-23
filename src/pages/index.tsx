@@ -1,6 +1,5 @@
-import { HeroSection, AboutSection, TOBKSection, BerlatihSection, GoNewsSection, FooterSection} from '@/components/HomeComponent/Index'
+import { HeroSection, AboutSection, TOBKSection, BerlatihSection, FooterSection, ProgramGoSection, FasilitasSection, TopGuruSection, TestimoniMuridSection, Faq} from '@/components/HomeComponent/Index'
 import HomeLayout from '@/components/Layouts/HomeLayout';
-import NavbarHome from '@/components/NavbarHome';
 import React from 'react'
 
 const Home = () => {
@@ -10,7 +9,11 @@ const Home = () => {
       <AboutSection/>
       <TOBKSection/>
       <BerlatihSection/>
-      <GoNewsSection/>
+      <ProgramGoSection/>
+      <FasilitasSection/>
+      <TopGuruSection/>
+      <TestimoniMuridSection/>
+      <Faq/>
       <FooterSection/>
     </div>
   )
