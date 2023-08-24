@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Button } from "@material-tailwind/react";
 
-const Button = () => {
-  return (
-    <button>
-      button
-    </button>
-  )
+interface ButtonProps {
+  label: string;
+  className?: string;
 }
 
-export default Button
+const Buttons = ({ label, className }: ButtonProps) => {
+  return <Button className={className}>{label}</Button>;
+};
+
+export default Buttons;

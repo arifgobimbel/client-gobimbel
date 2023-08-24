@@ -21,7 +21,7 @@ contoh Update Kedua Feature = `Go-NoTaskFeature-FE: Feature - Update02 Pages Log
 
 ## Branch
 
-- Dev => Branch yang digunakan di dev masing-masing
+- Branch => Branch yang digunakan sesuai nama panggilan masing-masing, example: fal, fajri, ricky, arif, aji
 - Main => Branch Default
 - Staging => Branch Yang digunakan untuk testing sebelum production
 - QA => Branch Yang digunakan QA untuk melakukan testing
