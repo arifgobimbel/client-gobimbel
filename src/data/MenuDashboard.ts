@@ -1,4 +1,3 @@
-import DashboardIcon from "../../public/assets/SVGFile/DashboardIcon"
 import { BiSolidDashboard } from 'react-icons/bi'
 
 const MenuDashboard = [

@@ -1,2 +1,8 @@
 export { default as IlustrasiHero } from './IlustrasiHero.svg'
 export { default as LogoHeader } from './LogoHeader.svg'
+export { default as Belajar } from './Belajar.svg'
+export { default as Berlatih } from './Berlatih.svg'
+export { default as Bertanding } from './Bertanding.svg'
+export { default as Program1thn } from './Program1thn.svg'
+export { default as ProgramApp } from './ProgramApp.svg'
+export { default as ProgramKedinasan } from './ProgramKedinasan.svg'
