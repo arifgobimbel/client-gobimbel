@@ -48,7 +48,7 @@ const NavbarHome = () => {
             menuData.name === 'Produk kami' ?
             <Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
               <MenuHandler>
-                  <Typography className="text-white flex justify-center items-center cursor-pointer">
+                  <p className="text-white flex justify-center items-center cursor-pointer">
                     {menuData.name}
                     <HiChevronDown
                       strokeWidth={2}
@@ -56,7 +56,7 @@ const NavbarHome = () => {
                         isMenuOpen ? "rotate-180" : ""
                       }`}
                     />
-                  </Typography>
+                  </p>
               </MenuHandler>
               <MenuList className="hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid">
                 <Card
@@ -73,9 +73,9 @@ const NavbarHome = () => {
               </MenuList>
             </Menu>
             :
-            <Typography className='text-white cursor-pointer'>
+            <p className='text-white cursor-pointer'>
             {menuData.name}
-            </Typography>
+            </p>
           }
           </div>
         ))
