@@ -1,4 +1,4 @@
-import { BiSolidDashboard } from "react-icons/bi";
+import { BiSolidDashboard } from 'react-icons/bi'
 
 const MenuDashboard = [
   {

@@ -9,6 +9,7 @@ import { FaUserGraduate } from 'react-icons/fa'
 import ListProduct from '@/data/ListProduct'
 import { LogoHeader } from '../../public/assets/svg'
 import { VscClose } from 'react-icons/vsc'
+import Link from 'next/link'
 
 const NavbarHome = () => {
 
@@ -94,7 +95,11 @@ const NavbarHome = () => {
             </MenuList>
           </Menu>
           :
-          <Button onClick={() => setIsLogin(true)} className='bg-primary-yellow text-black'>Masuk / Daftar</Button>
+          <>
+          <Link href="/auth/signin">
+          <Button className='bg-primary-yellow text-black'>Masuk / Daftar</Button>
+          </Link>
+          </>
         }
       <span onClick={() => setOpenMenu(!openMenu)} className='p-3 bg-primary-red-500 rounded-full hover:bg-red-600 cursor-pointer lg:hidden z-[99]'>
         {

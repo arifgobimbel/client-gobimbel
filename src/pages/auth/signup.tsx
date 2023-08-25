@@ -1,4 +1,4 @@
-import BlankLayout from '@/components/Layouts/BlankLayout';
+import AuthLayout from '@/components/Layouts/AuthLayout';
 import React from 'react'
 
 const SignUp = () => {
@@ -8,6 +8,6 @@ const SignUp = () => {
 }
 
 SignUp.getLayout = (page: any) => {
-  return <BlankLayout>{page}</BlankLayout>;
+  return <AuthLayout>{page}</AuthLayout>;
 };
 export default SignUp
