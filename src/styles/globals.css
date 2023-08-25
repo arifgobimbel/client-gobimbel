@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card-about-home {
+  background: linear-gradient(251.83deg, #d03e4f -34.2%, #fdd100 88.87%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.shadow-button {
+    box-shadow: -6px 6px #000000;
+}
