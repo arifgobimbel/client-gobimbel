@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Fasilitas from "@/data/Fasilitas";
-import Link from "next/link";
-
+import { Dialog, DialogBody } from "@material-tailwind/react";
+import { ArrowRight, XMark } from "../../../public/assets/svg";
 const FasilitasSection = () => {
+  const [open, setOpen] = useState<{ [key: number]: boolean }>({});
+
+  const handleOpen = (index: number) => {
+    setOpen((prev) => ({ ...prev, [index]: true }));
+  };
+
+  const handleClose = (index: number) => {
+    setOpen((prev) => ({ ...prev, [index]: false }));
+  };
   return (
     <div className="bg-secondary-graylight-100">
       <div className="container mx-auto py-8 md:py-16">
@@ -18,10 +27,38 @@ const FasilitasSection = () => {
               <div className="mx-auto">
                 <item.icon className="w-12 h-12 md:w-24 md:h-24" />
               </div>
-              <p className="text-xs md:text-sm font-semibold -mt-2 md:-mt-4 md:px-6">{item.title}</p>
-              <Link className="flex justify-evenly items-center text-xs" href={item.link}>
+              <p className="text-xs md:text-sm font-semibold -mt-2 md:-mt-4 md:px-6">
+                {item.title}
+              </p>
+              <button
+                className="flex gap-2 justify-center items-center text-xs text-primary-gray-400 -mt-4"
+                onClick={() => handleOpen(index)}
+              >
                 Lihat Detail
-              </Link>
+                <ArrowRight className="w-2 h-2 fill-primary-gray-400" />
+              </button>
+              <Dialog
+                className="border-4 border-primary-red rounded-3xl px-2 h-fit"
+                open={open[index]}
+                size="md"
+                handler={() => handleOpen(index)}
+              >
+                <DialogBody
+                  divider
+                  className="h-auto overflow-y-auto no-scrollbar text-black border-y-0 font-poppins"
+                >
+                  <div className="flex justify-end items-center mt-2 mb-6 relative">
+                    <XMark
+                      className="w-4 h-4 cursor-pointer fixed"
+                      onClick={() => handleClose(index)}
+                    />
+                  </div>
+                  <h1 className="font-bold text-black text-xl text-center mb-4">
+                    {item.title}
+                  </h1>
+                  <item.link />
+                </DialogBody>
+              </Dialog>
             </div>
           ))}
         </div>
