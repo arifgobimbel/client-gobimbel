@@ -9,7 +9,7 @@ const ProgramGoSection = () => {
       <div className="container mx-auto">
         <h1 className="ml-4 mt-6 md:ml-0 text-2xl md:text-3xl font-bold tracking-tight">Program Pilihan Ganesha Operation</h1>
         <h4 className="my-2 ml-4 md:ml-0 text-md md:text-xl font-medium">Berbagai Macam Program Pilihan Sesuai Kebutuhanmu</h4>
-        <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-x-4 mt-12 mx-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3 gap-x-4 mt-12 mx-4">
           {Program.map((item, index) => (
             <div
               key={index}
@@ -19,7 +19,7 @@ const ProgramGoSection = () => {
               <div className="absolute bg-primary-yellow-100 opacity-60 rounded-full w-12 h-12 -left-4 top-6"></div>
               <item.icon className="mx-auto h-40 mt-8" />
               <div className="mb-12 mx-8">
-                <div className="bg-primary-yellow-100 opacity-80 rounded-md p-2 h-auto md:h-24">
+                <div className="bg-primary-yellow-100 opacity-80 rounded-md p-2 h-auto lg:h-24">
                   <p className="text-sm font-semibold">{item.content}</p>
                 </div>
                 <Link
