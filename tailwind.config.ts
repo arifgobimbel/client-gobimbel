@@ -6,6 +6,9 @@ module.exports = withMT({
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Poppins", "sans-serif"],
+    },
     colors: {
       transparent: "transparent",
       current: "currentColor",
