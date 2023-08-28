@@ -1,4 +1,4 @@
-import { HeroSection, AboutSection, TOBKSection, BerlatihSection, FooterSection, ProgramGoSection, FasilitasSection, TopGuruSection, TestimoniMuridSection, Faq} from '@/components/HomeComponent/Index'
+import { HeroSection, AboutSection, TOBKSection, BerlatihSection, ProgramGoSection, FasilitasSection, TopGuruSection, TestimoniMuridSection, Faq} from '@/components/HomeComponent/Index'
 import HomeLayout from '@/components/Layouts/HomeLayout';
 import React from 'react'
 
@@ -14,7 +14,6 @@ const Home = () => {
       <TopGuruSection/>
       <TestimoniMuridSection/>
       <Faq/>
-      <FooterSection/>
     </div>
   )
 }
