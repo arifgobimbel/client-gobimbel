@@ -45,22 +45,21 @@ const MediaSosial = [
 
 const FooterSection = () => {
   return (
-    <footer className="relative py-10">
-      <BgFooter className="absolute inset-0 z-[-1] top-0 left-0 right-0 bottom-0 h-full md:h-auto"/>
+    <footer className="py-10">
       <div className="container mx-auto">
         {/* logo */}
         <div className="flex justify-center">
           <div className="text-center text-white font-bold text-lg">
-            <LogoHeader className="w-48 md:w-[18rem] inline" />
+            <LogoHeader className="w-48 lg:w-[18rem] inline" />
             <h3 className="text-sm">The King of The Fastest Solution</h3>
           </div>
         </div>
         {/* menus */}
         <div className="menus flex flex-col md:flex-row justify-between">
           {/* Kolom1 */}
-          <div className="flex flex-col md:flex-row mt-8 md:mt-0 gap-x-4 items-center text-sm md:w-1/3">
-            <MobilePhone className="w-60 h-60 md:w-[25rem] md:h-[25rem]" />
-            <div className="md:mt-40 mt-6 px-4 md:px-0 text-white">
+          <div className="flex flex-col lg:flex-row mt-8 md:mt-10 lg:mt-0 gap-x-4 items-center text-sm md:w-1/3">
+            <MobilePhone className="w-60 h-60 md:w-52 md:h-52 lg:w-[25rem] lg:h-[25rem]" />
+            <div className="lg:mt-40 mt-6 px-4 md:px-0 text-white">
               <p>
                 Saat ini aplikasi bimbel online
                 <b className="font-bold"> GO KREASI</b> bisa di download di

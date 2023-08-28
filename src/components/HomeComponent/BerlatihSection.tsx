@@ -10,7 +10,7 @@ const BerlatihSection = () => {
         <h1 className="mb-6 ml-4 md:ml-0 text-2xl md:text-3xl font-bold tracking-tight">
           Buku Sakti/Latihan Soal
         </h1>
-        <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 md:gap-x-4 gap-y-4 md:gap-y-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 md:gap-x-4 gap-y-4 md:gap-y-8">
           {Berlatih.map((item, index) => (
             <div
               key={index}

@@ -39,7 +39,7 @@ const Faq = () => {
         <h1 className="mb-8 ml-4 md:ml-0 text-2xl md:text-3xl font-bold tracking-tight">
           Frequently Asked Question (FAQ)
         </h1>
-        <div className="px-6 md:px-40">
+        <div className="px-6 md:px-4 lg:px-40">
           {FaqDatas.map((item, index) => (
             <Fragment key={index}>
               <h3 className="font-semibold text-lg mt-4 mb-3">

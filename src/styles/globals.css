@@ -19,6 +19,12 @@
   }
 }
 
+footer {
+  background-image: url("../../public/assets/PNG/footerbg.png");
+  background-position: center;
+  background-size: cover;
+}
+
 .card-about-home {
   background: linear-gradient(251.83deg, #d03e4f -34.2%, #fdd100 88.87%);
   display: flex;
