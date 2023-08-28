@@ -1,41 +1,10 @@
 import TestimoniSiswa from '@/data/TestimoniSiswa';
-import { Card, CardBody, CardFooter, CardHeader } from '@material-tailwind/react';
+import settings from '@/utils/SetingSlider';
+import { Card, CardFooter } from '@material-tailwind/react';
 import React from 'react'
 import Slider from 'react-slick'
 
 const TestimoniMuridSection = () => {
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    responsive: [
-      {
-        breakpoint: 1280,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        }
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-      }
-    ]
-  };
 
   return (
     <div>
@@ -53,9 +22,9 @@ const TestimoniMuridSection = () => {
               <div>
               <iframe className='h-[280px] w-full' src={dataSiswa.link} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen/>
               </div>
-              <div className='text-center bg-primary-red text-white px-6 py-4'>
+              <CardFooter className='text-center bg-primary-red text-white'>
                 <p>{dataSiswa.description}</p>
-              </div>
+              </CardFooter>
             </Card>
           </div>
           ))

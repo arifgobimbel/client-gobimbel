@@ -1,11 +1,13 @@
-export { default as IlustrasiHero } from "./IlustrasiHero.svg";
-export { default as LogoHeader } from "./LogoHeader.svg";
-export { default as Belajar } from "./Belajar.svg";
-export { default as Berlatih } from "./Berlatih.svg";
-export { default as Bertanding } from "./Bertanding.svg";
-export { default as Program1thn } from "./Program1thn.svg";
-export { default as ProgramApp } from "./ProgramApp.svg";
-export { default as ProgramKedinasan } from "./ProgramKedinasan.svg";
+
+export { default as IlustrasiHero } from './IlustrasiHero.svg'
+export { default as LogoHeader } from './LogoHeader.svg'
+export { default as Belajar } from './Belajar.svg'
+export { default as Berlatih } from './Berlatih.svg'
+export { default as Bertanding } from './Bertanding.svg'
+export { default as Program1thn } from './Program1thn.svg'
+export { default as ProgramApp } from './ProgramApp.svg'
+export { default as ProgramKedinasan } from './ProgramKedinasan.svg'
+export { default as IlustrasiEmptyProduct } from './IlustrasiEmptyProduct.svg'
 
 // Fasilitas Kami
 export { default as IconFK1 } from "./fasilitas-kami/fk1.svg";
@@ -48,6 +50,12 @@ export { default as IconERE3 } from "./ere/ere3.svg";
 
 // Arrow
 export { default as ArrowRight } from "./arrowright.svg";
+
+// Jenis Layanan
+export { default as Gold } from "./JenisLayanan/Gold.svg";
+export { default as Silver } from "./JenisLayanan/Silver.svg";
+export { default as Perak } from "./JenisLayanan/Perak.svg";
+
 // XMark
 export { default as XMark } from "./xmark.svg";
 // Mobile Phone

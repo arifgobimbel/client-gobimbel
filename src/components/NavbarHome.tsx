@@ -19,8 +19,8 @@ const NavbarHome = () => {
  
   // const closeMenu = () => setIsMenuOpen(false);
 
-  const renderItems = ListProduct.map(({ title, description }) => (
-    <a href="#" key={title}>
+  const renderItems = ListProduct.map(({ title, description, path}) => (
+    <Link href={path} key={title}>
       <MenuItem>
         <Typography variant="h6" color="blue-gray" className="mb-1">
           {title}
@@ -29,7 +29,7 @@ const NavbarHome = () => {
           {description}
         </Typography>
       </MenuItem>
-    </a>
+    </Link>
   ));
 
   return (
