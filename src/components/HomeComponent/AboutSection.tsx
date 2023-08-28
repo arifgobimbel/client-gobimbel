@@ -1,7 +1,7 @@
-import React from "react";
-import Component3B from "../ElementComponent/Component3B";
-import TentangGo from "../ElementComponent/TentangGo";
-import ProductMenuComponent from "../ElementComponent/ProductMenuComponent";
+import React from 'react'
+import ProductMenuComponent from '../AtributComponent/ProductMenuComponent'
+import Component3B from '../AtributComponent/Component3B'
+import TentangGo from '../AtributComponent/TentangGo'
 
 const AboutSection = () => {
   return (

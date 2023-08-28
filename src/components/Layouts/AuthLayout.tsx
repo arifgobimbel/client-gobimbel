@@ -3,11 +3,11 @@ import { PropsWithChildren } from 'react'
 
 const AuthLayout = ({ children }: PropsWithChildren) => {
   return (
-    <div className='flex'>
-        <div className='basis-1/2'>
+    <div className='flex justify-center items-center'>
+        <div className='lg:basis-1/2'>
         {children}
         </div>
-        <div className='h-screen bg-primary-yellow-100 basis-[50%] flex justify-center items-center hidden md:flex'>
+        <div className='h-screen bg-primary-yellow-100 basis-1/2 flex justify-center items-center hidden lg:flex'>
           <div className='w-[80%]'>
             <Carousel
                 autoplay={true}
