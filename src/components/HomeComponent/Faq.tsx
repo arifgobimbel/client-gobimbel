@@ -39,7 +39,7 @@ const Faq = () => {
         <h1 className="mb-8 ml-4 md:ml-0 text-2xl md:text-3xl font-bold tracking-tight">
           Frequently Asked Question (FAQ)
         </h1>
-        <div className="px-40">
+        <div className="px-6 md:px-40">
           {FaqDatas.map((item, index) => (
             <Fragment key={index}>
               <h3 className="font-semibold text-lg mt-4 mb-3">
@@ -54,7 +54,7 @@ const Faq = () => {
                 >
                   <Fragment>
                     <AccordionHeader
-                      className={`border-b-0 transition-colors text-lg text-black hover:text-black ${
+                      className={`border-b-0 transition-colors text-sm md:text-lg text-black hover:text-black ${
                         open === itemContent.id
                           ? "text-primary-red hover:text-primary-red"
                           : ""
@@ -63,7 +63,7 @@ const Faq = () => {
                     >
                       {itemContent.title}
                     </AccordionHeader>
-                    <AccordionBody className="pt-0 text-base font-normal text-black">
+                    <AccordionBody className="pt-0 text-xs md:text-base font-normal text-black">
                       {itemContent.id === 12 ? (
                         <div className="flex gap-x-1">
                           {itemContent.description.map(

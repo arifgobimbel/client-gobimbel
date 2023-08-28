@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Copyright,
   Facebook,
   GAStore,
   Instagram,
@@ -11,11 +12,13 @@ import {
   WA,
   XTwitter,
   Youtube,
+  BgFooter
 } from "../../../public/assets/svg";
+import Link from "next/link";
 
 interface FooterProps {
   icon?: any;
-  title?: string;
+  title: string;
 }
 
 const HubungiKami: FooterProps[] = [
@@ -33,73 +36,83 @@ const InfoLanjutan: FooterProps[] = [
   { title: "Refund Policy" },
 ];
 
-const MediaSosial: FooterProps[] = [
-  { icon: Youtube },
-  { icon: Instagram },
-  { icon: Facebook },
-  { icon: XTwitter },
+const MediaSosial = [
+  { icon: Youtube, link: "https://google.com" },
+  { icon: Instagram, link: "https://google.com" },
+  { icon: Facebook, link: "https://google.com" },
+  { icon: XTwitter, link: "https://google.com" },
 ];
 
 const FooterSection = () => {
   return (
-    <footer className="bg-primary-red">
+    <footer className="relative py-10">
+      <BgFooter className="absolute inset-0 z-[-1] top-0 left-0 right-0 bottom-0 h-full md:h-auto"/>
       <div className="container mx-auto">
         {/* logo */}
         <div className="flex justify-center">
           <div className="text-center text-white font-bold text-lg">
-            <LogoHeader className="w-[18rem]" />
-            <h3>The King of The Fastest Solution</h3>
+            <LogoHeader className="w-48 md:w-[18rem] inline" />
+            <h3 className="text-sm">The King of The Fastest Solution</h3>
           </div>
         </div>
         {/* menus */}
-        <div className="menus flex justify-between items-center">
+        <div className="menus flex flex-col md:flex-row justify-between">
           {/* Kolom1 */}
-          <div className="flex gap-x-4 items-center text-sm w-1/3">
-            <MobilePhone className="w-[25rem] h-[25rem]" />
-            <div className="mt-40 text-white">
+          <div className="flex flex-col md:flex-row mt-8 md:mt-0 gap-x-4 items-center text-sm md:w-1/3">
+            <MobilePhone className="w-60 h-60 md:w-[25rem] md:h-[25rem]" />
+            <div className="md:mt-40 mt-6 px-4 md:px-0 text-white">
               <p>
                 Saat ini aplikasi bimbel online
                 <b className="font-bold"> GO KREASI</b> bisa di download di
                 Google Play dan App Store
               </p>
-              <GAStore className="w-32 h-32" />
+              <GAStore className="w-40 mx-auto h-auto md:w-32 md:h-32" />
             </div>
           </div>
           {/* Kolom2 */}
-          <div className="w-1/3 text-white mt-10">
-            <h2 className="font-bold text-lg">Hubungi Kami</h2>
-            <ul>
-              {HubungiKami.map((item, index) => (
-                <li key={index} className="flex gap-x-4 items-center my-4">
-                  <item.icon className="w-5 h-5" />
-                  <p>{item.title}</p>
-                </li>
-              ))}
-            </ul>
+          <div className="md:w-1/3 w-full px-4 md:px-0 text-white mt-10 md:grid justify-center">
+            <div>
+              <h2 className="font-bold text-lg">Hubungi Kami</h2>
+              <ul>
+                {HubungiKami.map((item, index) => (
+                  <li key={index} className="flex gap-x-4 items-center my-4">
+                    <item.icon className="w-5 h-5" />
+                    <p>{item.title}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
           {/* Kolom3 */}
-          <div className="w-1/3 text-white mt-10">
-            <h2 className="font-bold text-lg mb-3">Info Lebih Lanjut</h2>
-            <ul>
-              {InfoLanjutan.map((item, index) => (
-                <li key={index} className="mb-4">
-                  <p>{item.title}</p>
-                </li>
-              ))}
-            </ul>
+          <div className="md:w-1/3 px-4 md:px-0 text-white mt-10 md:grid justify-center">
+            <div>
+              <h2 className="font-bold text-lg mb-3">Info Lebih Lanjut</h2>
+              <ul>
+                {InfoLanjutan.map((item, index) => (
+                  <li key={index} className="mb-4">
+                    <p>{item.title}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
         {/* media sosial */}
-        <ul className="flex justify-center gap-x-4 items-center">
+        <ul className="flex justify-center gap-x-4 mt-4 md:mt-0 items-center">
           {MediaSosial.map((item, index) => (
             <li key={index}>
               <div className="bg-white w-10 h-10 rounded-full flex justify-center items-center">
-                <item.icon className="w-6 h-6"/>
+                <Link href={item.link}>
+                  <item.icon className="w-6 h-6" />
+                </Link>
               </div>
             </li>
           ))}
         </ul>
-        <p className="text-center text-white mt-6 pb-8">Copyright 2023, Ganesha Operation. All Right Reserved</p>
+        <div className="text-white mt-6 pb-8 px-4 md:px-0 text-sm flex justify-center md:items-center gap-x-2">
+          <Copyright className="w-5 h-5"/>
+          <p>Copyright 2023, Ganesha Operation. All Right Reserved.</p>
+        </div>
       </div>
     </footer>
   );

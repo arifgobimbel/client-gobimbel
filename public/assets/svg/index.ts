@@ -54,6 +54,10 @@ export { default as XMark } from "./xmark.svg";
 export { default as MobilePhone } from "./mobilephone.svg";
 // Google Play & Apple Store
 export { default as GAStore } from "./googleappstore.svg";
+// Copyright
+export { default as Copyright } from "./copyright.svg";
+// Backgorund Footer
+export { default as BgFooter } from "./bgfooter.svg";
 
 // Footer
 export { default as Phone } from "./phone.svg";
