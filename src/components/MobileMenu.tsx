@@ -32,10 +32,12 @@ const MobileMenu = () => {
                   <>
                   {
                     ListProduct.map((listData:any, index:number) => (
-                      <MenuItem key={index} className='text-base text-black cursor-pointer'>
+                      <Link href={listData.path} key={index}>
+                      <MenuItem className='text-base text-black cursor-pointer'>
                         <Typography className="font-bold">{listData.title}</Typography>
                         <Typography>{listData.description}</Typography>
                       </MenuItem>
+                      </Link>
                     ))
                   }
                   </>

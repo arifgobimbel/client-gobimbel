@@ -1,4 +1,5 @@
 import TopGuru from '@/data/TopGuru'
+import settings from '@/utils/SetingSlider'
 import { Avatar, Card, CardBody, CardFooter } from '@material-tailwind/react'
 import React from 'react'
 import { AiFillStar } from 'react-icons/ai'
@@ -6,38 +7,6 @@ import { MdWorkHistory } from 'react-icons/md'
 import Slider from "react-slick";
 
 const TopGuruSection = () => {
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    responsive: [
-      {
-        breakpoint: 1280,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        }
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-      }
-    ]
-  };
 
   return (
     <div>
@@ -51,7 +20,7 @@ const TopGuruSection = () => {
               <Avatar src='/assets/image/avatar.png' alt='avatar' size='md' variant='rounded' color='yellow' className='w-16 h-16 absolute -left-8 -top-8'/>
                 <CardBody>
                   <div className='text-center'>
-                  <h3 className='font-medium text-2xl mb-1'>{menudata.name}</h3>
+                  <h3 className='font-medium text-2xl mb-1 flex justify-center items-center'>{menudata.name}</h3>
                   <h4 className='text-md'>{menudata.matapelajaran}</h4>
                   </div>
                   <div className='flex items-center gap-2 mb-3 mt-4'>
