@@ -1,8 +1,3 @@
-interface DescriptionProps {
-  title: string;
-  link: string;
-}
-
 interface FaqContentProps {
   id: number;
   title: string;
