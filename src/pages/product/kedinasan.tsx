@@ -65,7 +65,7 @@ const Kedinasan = () => {
               <Card key={index} shadow={false} className='flex px-4 py-6 border-4 border-primary-grey flex-row items-center'>
                 <dataProduct.icon className="w-32 h-32"/>
                 <div className='text-center w-full'>
-                <h3 className='font-bold text-md sm:text-2xl mb-4'>{dataProduct.name}</h3>
+                <h3 className='font-bold text-black text-md sm:text-2xl mb-4'>{dataProduct.name}</h3>
                 <h4 className='text-md sm:text-2xl'>{dataProduct.price}</h4>
                 </div>
               </Card>
