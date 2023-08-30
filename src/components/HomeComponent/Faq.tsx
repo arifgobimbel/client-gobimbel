@@ -30,8 +30,12 @@ const Icon = ({ id, open }: any) => {
 
 const Faq = () => {
   const [open, setOpen] = useState(0);
+  const [itemsToShow, setItemsToShow] = useState(1);
 
   const handleOpen = (value: number) => setOpen(open === value ? 0 : value);
+  const handleShowMore = () => {
+    setItemsToShow((prevItems) => prevItems === 1 ? FaqDatas.length : 1);
+  };
 
   return (
     <div className="bg-secondary-graylight-100">
@@ -40,7 +44,7 @@ const Faq = () => {
           Frequently Asked Question (FAQ)
         </h1>
         <div className="px-6 md:px-4 lg:px-40">
-          {FaqDatas.map((item, index) => (
+          {FaqDatas.slice(0, itemsToShow).map((item, index) => (
             <Fragment key={index}>
               <h3 className="font-semibold text-lg mt-4 mb-3">
                 {item.category}
@@ -94,6 +98,9 @@ const Faq = () => {
             </Fragment>
           ))}
         </div>
+        <p className="cursor-pointer text-black text-center text-lg font-bold mt-6" onClick={handleShowMore}>
+          {itemsToShow === 1 ? "Lihat Selengkapnya" : "Lihat Lebih Sedikit"}
+        </p>
       </div>
     </div>
   );

@@ -1,13 +1,12 @@
-
-export { default as IlustrasiHero } from './IlustrasiHero.svg'
-export { default as LogoHeader } from './LogoHeader.svg'
-export { default as Belajar } from './Belajar.svg'
-export { default as Berlatih } from './Berlatih.svg'
-export { default as Bertanding } from './Bertanding.svg'
-export { default as Program1thn } from './Program1thn.svg'
-export { default as ProgramApp } from './ProgramApp.svg'
-export { default as ProgramKedinasan } from './ProgramKedinasan.svg'
-export { default as IlustrasiEmptyProduct } from './IlustrasiEmptyProduct.svg'
+export { default as IlustrasiHero } from "./IlustrasiHero.svg";
+export { default as LogoHeader } from "./LogoHeader.svg";
+export { default as Belajar } from "./Belajar.svg";
+export { default as Berlatih } from "./Berlatih.svg";
+export { default as Bertanding } from "./Bertanding.svg";
+export { default as Program1thn } from "./Program1thn.svg";
+export { default as ProgramApp } from "./ProgramApp.svg";
+export { default as ProgramKedinasan } from "./ProgramKedinasan.svg";
+export { default as IlustrasiEmptyProduct } from "./IlustrasiEmptyProduct.svg";
 
 // Fasilitas Kami
 export { default as IconFK1 } from "./fasilitas-kami/fk1.svg";
@@ -60,12 +59,23 @@ export { default as Perak } from "./JenisLayanan/Perak.svg";
 export { default as XMark } from "./xmark.svg";
 // Mobile Phone
 export { default as MobilePhone } from "./mobilephone.svg";
-// Google Play & Apple Store
-export { default as GAStore } from "./googleappstore.svg";
+// Google Play Store
+export { default as PlayStore } from "./PlayStore.svg";
+// App Store
+export { default as AppStore } from "./AppStore.svg";
 // Copyright
 export { default as Copyright } from "./copyright.svg";
 // Backgorund Footer
 export { default as BgFooter } from "./bgfooter.svg";
+// Crown
+export { default as Crown } from "./Crown.svg";
+// Stars Left and Right
+export { default as StarsLeft } from "./StarsLeft.svg";
+export { default as StarsRight } from "./StarsRight.svg";
+// Monsters
+export { default as Monster1 } from "./Monster1.svg";
+export { default as Monster2 } from "./Monster2.svg";
+export { default as Monster3 } from "./Monster3.svg";
 
 // Footer
 export { default as Phone } from "./phone.svg";
