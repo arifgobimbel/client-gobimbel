@@ -1,4 +1,3 @@
-
 export { default as IlustrasiHero } from './IlustrasiHero.svg'
 export { default as LogoHeader } from './LogoHeader.svg'
 export { default as LogoGoWithColor } from './LogoGoWithColor.svg'
@@ -62,12 +61,23 @@ export { default as Perak } from "./JenisLayanan/Perak.svg";
 export { default as XMark } from "./xmark.svg";
 // Mobile Phone
 export { default as MobilePhone } from "./mobilephone.svg";
-// Google Play & Apple Store
-export { default as GAStore } from "./googleappstore.svg";
+// Google Play Store
+export { default as PlayStore } from "./PlayStore.svg";
+// App Store
+export { default as AppStore } from "./AppStore.svg";
 // Copyright
 export { default as Copyright } from "./copyright.svg";
 // Backgorund Footer
 export { default as BgFooter } from "./bgfooter.svg";
+// Crown
+export { default as Crown } from "./Crown.svg";
+// Stars Left and Right
+export { default as StarsLeft } from "./StarsLeft.svg";
+export { default as StarsRight } from "./StarsRight.svg";
+// Monsters
+export { default as Monster1 } from "./Monster1.svg";
+export { default as Monster2 } from "./Monster2.svg";
+export { default as Monster3 } from "./Monster3.svg";
 
 // Footer
 export { default as Phone } from "./phone.svg";

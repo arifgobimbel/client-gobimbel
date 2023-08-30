@@ -2,7 +2,8 @@ import React from "react";
 import {
   Copyright,
   Facebook,
-  GAStore,
+  PlayStore,
+  AppStore,
   Instagram,
   Line,
   LogoHeader,
@@ -12,35 +13,54 @@ import {
   WA,
   XTwitter,
   Youtube,
-  BgFooter
 } from "../../../public/assets/svg";
 import Link from "next/link";
 
 interface FooterProps {
   icon?: any;
   title: string;
+  link: string | any;
 }
 
 const HubungiKami: FooterProps[] = [
-  { icon: Phone, title: "(022)4218177" },
-  { icon: Mail, title: "officialgopusat@gmail.com" },
-  { icon: WA, title: "+62 811 2468 988" },
-  { icon: Line, title: "Ganesha Operation" },
+  { icon: Phone, title: "(022)4218177", link: "#" },
+  {
+    icon: Mail,
+    title: "officialgopusat@gmail.com",
+    link: "https://mail.google.com/mail/u/0/?fs=1&to=officialgopusat@gmail.com&su=Tanya+minGO&tf=cm",
+  },
+  {
+    icon: WA,
+    title: "+62 811 2468 988",
+    link: "https://api.whatsapp.com/send?phone=628112468988&text=&source=&data=",
+  },
+  {
+    icon: Line,
+    title: "Ganesha Operation",
+    link: "https://line.me/R/ti/p/@769igxyd?from=page&accountId=769igxyd",
+  },
 ];
 
 const InfoLanjutan: FooterProps[] = [
-  { title: "FAQ" },
-  { title: "Kontak" },
-  { title: "Syarat dan Ketentuan" },
-  { title: "Kebijakan Privasi" },
-  { title: "Refund Policy" },
+  { title: "Syarat dan Ketentuan", link: "/syarat-ketentuan" },
+  { title: "Kebijakan Privasi", link: "/kebijakan-privasi" },
+  { title: "Refund Policy", link: "/refund-policy" },
 ];
 
 const MediaSosial = [
-  { icon: Youtube, link: "https://google.com" },
-  { icon: Instagram, link: "https://google.com" },
-  { icon: Facebook, link: "https://google.com" },
-  { icon: XTwitter, link: "https://google.com" },
+  {
+    icon: Youtube,
+    link: "https://www.youtube.com/c/GaneshaOperationOfficial/videos",
+  },
+  {
+    icon: Instagram,
+    link: "https://www.instagram.com/officialganeshaoperation/",
+  },
+  {
+    icon: Facebook,
+    link: "https://id-id.facebook.com/ganesha.operation.official/",
+  },
+  { icon: XTwitter, link: "https://twitter.com/officialgopusat" },
 ];
 
 const FooterSection = () => {
@@ -59,13 +79,26 @@ const FooterSection = () => {
           {/* Kolom1 */}
           <div className="flex flex-col lg:flex-row mt-8 md:mt-10 lg:mt-0 gap-x-4 items-center text-sm md:w-1/3">
             <MobilePhone className="w-60 h-60 md:w-52 md:h-52 lg:w-[25rem] lg:h-[25rem]" />
-            <div className="lg:mt-40 mt-6 px-4 md:px-0 text-white">
-              <p>
+            <div className="mt-6 px-4 md:px-0 text-white">
+              <p className="text-center md:text-left">
                 Saat ini aplikasi bimbel online
                 <b className="font-bold"> GO KREASI</b> bisa di download di
                 Google Play dan App Store
               </p>
-              <GAStore className="w-40 mx-auto h-auto md:w-32 md:h-32" />
+              <div className="flex justify-center md:justify-start gap-x-4 mt-4">
+                <Link
+                  target="_blank"
+                  href="https://play.google.com/store/apps/details?id=com.ganeshaoperation.kreasi&hl=in&gl=US"
+                >
+                  <PlayStore className="h-10 md:h-8 lg:h-18" />
+                </Link>
+                <Link
+                  target="_blank"
+                  href="https://apps.apple.com/id/app/gokreasi/id1478372788"
+                >
+                  <AppStore className="h-10 md:h-8 lg:h-18" />
+                </Link>
+              </div>
             </div>
           </div>
           {/* Kolom2 */}
@@ -74,9 +107,15 @@ const FooterSection = () => {
               <h2 className="font-bold text-lg">Hubungi Kami</h2>
               <ul>
                 {HubungiKami.map((item, index) => (
-                  <li key={index} className="flex gap-x-4 items-center my-4">
-                    <item.icon className="w-5 h-5" />
-                    <p>{item.title}</p>
+                  <li key={index}>
+                    <Link
+                      target="_blank"
+                      className="flex gap-x-4 items-center my-4"
+                      href={item.link}
+                    >
+                      <item.icon className="w-5 h-5" />
+                      <p>{item.title}</p>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -89,7 +128,13 @@ const FooterSection = () => {
               <ul>
                 {InfoLanjutan.map((item, index) => (
                   <li key={index} className="mb-4">
-                    <p>{item.title}</p>
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={item.link}
+                    >
+                      {item.title}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -101,7 +146,7 @@ const FooterSection = () => {
           {MediaSosial.map((item, index) => (
             <li key={index}>
               <div className="bg-white w-10 h-10 rounded-full flex justify-center items-center">
-                <Link href={item.link}>
+                <Link target="_blank" href={item.link}>
                   <item.icon className="w-6 h-6" />
                 </Link>
               </div>
@@ -109,7 +154,7 @@ const FooterSection = () => {
           ))}
         </ul>
         <div className="text-white mt-6 pb-8 px-4 md:px-0 text-sm flex justify-center md:items-center gap-x-2">
-          <Copyright className="w-5 h-5"/>
+          <Copyright className="w-5 h-5" />
           <p>Copyright 2023, Ganesha Operation. All Right Reserved.</p>
         </div>
       </div>

@@ -7,14 +7,18 @@ import { settingFasilitas } from "@/utils/SetingSlider";
 
 
 const FasilitasSection = () => {
-  const [open, setOpen] = useState<{ [key: number]: boolean }>({});
+  const [open, setOpen] = useState<boolean[]>(Array(Fasilitas.length).fill(false));
 
   const handleOpen = (index: number) => {
-    setOpen((prev) => ({ ...prev, [index]: true }));
+    const newOpenState = [...open];
+    newOpenState[index] = true;
+    setOpen(newOpenState);
   };
 
   const handleClose = (index: number) => {
-    setOpen((prev) => ({ ...prev, [index]: false }));
+    const newOpenState = [...open];
+    newOpenState[index] = false;
+    setOpen(newOpenState);
   };
   return (
     <div className="bg-secondary-graylight-100">
