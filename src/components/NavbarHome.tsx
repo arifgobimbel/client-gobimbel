@@ -73,9 +73,11 @@ const NavbarHome = () => {
               </MenuList>
             </Menu>
             :
+            <Link href={menuData.path}> 
             <p className='text-white cursor-pointer'>
             {menuData.name}
             </p>
+            </Link>
           }
           </div>
         ))

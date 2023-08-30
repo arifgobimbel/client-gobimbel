@@ -1,7 +1,7 @@
 const MenuHome = [
     {
         name: "Home",
-        path: "#"
+        path: "/"
     },
     {
         name: "Produk kami",
@@ -9,7 +9,7 @@ const MenuHome = [
     },
     {
         name: "PTN-Clopedia",
-        path: "#"
+        path: "/ptn-clopedia"
     },
     {
         name: "Fitur Kami",

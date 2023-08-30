@@ -1,5 +1,6 @@
 import { PropsWithChildren } from 'react'
 import NavbarHome from '../NavbarHome'
+import FooterSection from '../HomeComponent/FooterSection'
 
 const HomeLayout = ({ children }: PropsWithChildren) => {
   return (
@@ -10,6 +11,7 @@ const HomeLayout = ({ children }: PropsWithChildren) => {
         </div>
       </div>
       {children}
+      <FooterSection/>
     </div>
   )
 }

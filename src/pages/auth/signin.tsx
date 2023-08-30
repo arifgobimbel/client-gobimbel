@@ -1,12 +1,16 @@
 import AuthLayout from '@/components/Layouts/AuthLayout';
-import { Button, Card, Checkbox, Input, Typography } from '@material-tailwind/react';
+import { Button, Card, Input, Typography } from '@material-tailwind/react';
 import Link from 'next/link';
 import React from 'react'
+import { FiArrowLeft } from 'react-icons/fi';
 
 const SignIn = () => {
   return (
     <div className='flex justify-center items-center h-screen'>
       <Card color="transparent" shadow={false}>
+      <Link href="/">
+          <FiArrowLeft className="w-6 h-6 mb-12"/>
+      </Link>
       <Typography variant="h4" color="blue-gray">
         Sign In
       </Typography>

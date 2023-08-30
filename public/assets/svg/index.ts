@@ -1,12 +1,14 @@
-export { default as IlustrasiHero } from "./IlustrasiHero.svg";
-export { default as LogoHeader } from "./LogoHeader.svg";
-export { default as Belajar } from "./Belajar.svg";
-export { default as Berlatih } from "./Berlatih.svg";
-export { default as Bertanding } from "./Bertanding.svg";
-export { default as Program1thn } from "./Program1thn.svg";
-export { default as ProgramApp } from "./ProgramApp.svg";
-export { default as ProgramKedinasan } from "./ProgramKedinasan.svg";
-export { default as IlustrasiEmptyProduct } from "./IlustrasiEmptyProduct.svg";
+export { default as IlustrasiHero } from './IlustrasiHero.svg'
+export { default as LogoHeader } from './LogoHeader.svg'
+export { default as LogoGoWithColor } from './LogoGoWithColor.svg'
+export { default as Belajar } from './Belajar.svg'
+export { default as Berlatih } from './Berlatih.svg'
+export { default as Bertanding } from './Bertanding.svg'
+export { default as Program1thn } from './Program1thn.svg'
+export { default as ProgramApp } from './ProgramApp.svg'
+export { default as ProgramKedinasan } from './ProgramKedinasan.svg'
+export { default as IlustrasiEmptyProduct } from './IlustrasiEmptyProduct.svg'
+export { default as IlustrasiUniv } from './IlustrasiUniv.svg'
 
 // Fasilitas Kami
 export { default as IconFK1 } from "./fasilitas-kami/fk1.svg";
@@ -86,3 +88,10 @@ export { default as Youtube } from "./youtube.svg";
 export { default as Instagram } from "./instagram.svg";
 export { default as Facebook } from "./facebook.svg";
 export { default as XTwitter } from "./XTwitter.svg";
+
+
+// Universitas
+export { default as ITB } from './Universitas/ITB.svg'
+export { default as IPB } from './Universitas/IPB.svg'
+export { default as ISBI } from './Universitas/ISBI.svg'
+export { default as ITSN } from './Universitas/ITSN.svg'

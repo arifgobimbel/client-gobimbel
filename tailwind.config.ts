@@ -1,4 +1,6 @@
 const withMT = require("@material-tailwind/react/utils/withMT");
+import { Poppins } from "next/font/google";
+
 module.exports = withMT({
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
